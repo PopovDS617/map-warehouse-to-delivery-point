@@ -41,12 +41,7 @@ const App = () => {
     return () => map.remove();
   }, []);
 
-  // const clear = () => {
-  //   markers.forEach((marker) => marker.remove());
-  //   setMarkers([]);
-
-  //   removeRoute('green');
-  // };
+ 
 
   const route = () => {
     const key = API_KEY;
@@ -73,7 +68,7 @@ const App = () => {
         },
         paint: {
           'line-color': color,
-          'line-width': 6,
+          'line-width': 5,
         },
       });
     } catch (error) {
